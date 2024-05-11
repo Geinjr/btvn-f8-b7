@@ -1,0 +1,137 @@
+* {
+    font-family: "Lato", sans-serif;
+}
+
+.list,
+.check {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    gap: 10px;
+}
+
+.list::before {
+    content: url(../icon/home.svg);
+    width: 20px;
+    height: 20px;
+}
+
+.list::after {
+    content: url(../icon/down.svg);
+    width: 15px;
+    height: auto;
+}
+
+.item {
+    width: 155px;
+    height: 40px;
+    list-style: none;
+    display: inline-block;
+    font-size: initial;
+    border: 1px solid black;
+    background: blueviolet;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.menu .item:nth-child(1) .list::after,
+.menu .item:nth-child(7) .list::after {
+    display: none;
+}
+
+.menu {
+    font-size: 0;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.none {
+    width: 260px;
+    height: 60px;
+    border: 1px solid black;
+    background: blueviolet;
+}
+
+ul {
+    list-style: none;
+}
+
+.check {
+    padding: 10px;
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+}
+
+.check::before {
+    content: url(../icon/check.svg);
+    width: 15px;
+    padding-right: 2px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    left: -2px;
+    top: 56px;
+    width: 225px;
+    background: #84bff3;
+    padding: 0;
+    box-shadow: 0px 7px 10px 0px #c4c1c1;
+}
+
+.triangle-up {
+    position: absolute;
+    right: 86px;
+    bottom: 3px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 14px solid #84bff3;
+}
+
+.menudropdown {
+    display: none;
+}
+
+.dropdown:hover .menudropdown {
+    display: block;
+}
+
+.item:hover .arround {
+    background: #2eed5b;
+    border-radius: 5px;
+}
+
+.item:hover .list {
+    color: white;
+}
+
+.item:hover .list::after {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%)
+        hue-rotate(305deg) brightness(102%) contrast(101%);
+}
+.item:hover .list::before {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%)
+        hue-rotate(305deg) brightness(102%) contrast(101%);
+}
+
+.arround {
+    width: 145px;
+    height: 30px;
+    background: blueviolet;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

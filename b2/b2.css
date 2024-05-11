@@ -1,0 +1,195 @@
+* {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg);
+}
+
+.wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    background: #ff574d;
+    width: 25%;
+    height: 450px;
+    padding: 20px;
+}
+.left {
+    background: #fff;
+    width: 34%;
+    height: 450px;
+    padding: 30px 60px;
+}
+
+.logotitle {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: white;
+    object-fit: cover;
+}
+
+.title {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color {
+    color: red;
+}
+
+.line {
+    position: relative;
+}
+
+.linedown {
+    position: absolute;
+    width: 60px;
+    border: 1px solid red;
+    top: 80px;
+}
+
+p {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn,
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.btnright {
+    width: 170px;
+    height: 40px;
+    padding: 5px;
+    background: white;
+    color: #ff574d;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    gap: 15px;
+    padding-bottom: 100px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-bottom: 50px;
+}
+
+.input {
+    padding: 8px;
+    width: 455px;
+    height: auto;
+}
+
+.wrapinput {
+    margin-bottom: 20px;
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+}
+
+.checked {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnleft {
+    width: 455px;
+    padding: 30px;
+    color: white;
+    background: #ff574d;
+    border: none;
+    height: 70px;
+}
+
+.btn:hover .btnright {
+    background: #6cda3d;
+}
+
+.btn:hover .btnright > a {
+    color: #fff;
+}
+.btn:hover .btnleft {
+    background: #5aa4ef;
+}
+
+.btn:hover .btnleft > a {
+    color: #cbcbcb;
+}
+
+.pointright {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) saturate(100%) invert(54%) sepia(43%) saturate(5387%)
+        hue-rotate(331deg) brightness(103%) contrast(97%);
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertical alignment */
+    align-content: center;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: whitesmoke;
+    box-shadow: 1px 1px 10px 0px #959191;
+}
+
+.wrap {
+    position: relative;
+}
+
+.middle {
+    position: absolute;
+    right: 895px;
+}

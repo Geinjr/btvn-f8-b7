@@ -11,6 +11,7 @@ body {
     align-items: center;
     height: 100vh;
     background-image: url("../img/login-bg2.jpg");
+    background-position: 60% 90%;
 }
 
 .wrap {
@@ -25,12 +26,15 @@ body {
     width: 25%;
     height: 450px;
     padding: 20px;
+    border-radius: 10px 0 0 10px;
+    color: white;
 }
 .left {
     background: #fff;
     width: 34%;
     height: 450px;
     padding: 30px 60px;
+    border-radius: 0px 10px 10px 0px;
 }
 
 .logotitle {
@@ -70,9 +74,10 @@ h2 {
 
 .linedown {
     position: absolute;
-    width: 60px;
+    width: 62px;
     border: 1px solid red;
     top: 80px;
+    right: 35%;
 }
 
 p {
@@ -158,11 +163,15 @@ h2 {
     color: #fff;
 }
 .btn:hover .btnleft {
-    background: #5aa4ef;
+    background: #69dc39;
 }
 
-.btn:hover .btnleft > a {
-    color: #cbcbcb;
+.linkleft {
+    color: white;
+}
+
+.btn:hover .linkleft {
+    color: #fa6533;
 }
 
 .pointright {
@@ -184,7 +193,7 @@ h2 {
     background: whitesmoke;
     box-shadow: 1px 1px 10px 0px #959191;
     position: absolute;
-    right: 825px;
+    right: 52.5%;
 }
 
 .wrap {
